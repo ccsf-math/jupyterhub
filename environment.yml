@@ -4,7 +4,7 @@ channels:
 dependencies:
   # pip and Python
   - python=3.11
-  - pip=25.2
+  - pip=25.3
   
   # Git, GitHub
   - gh=2.76
@@ -45,10 +45,11 @@ dependencies:
   - beautifulsoup4=4.13
   - html5lib=1.1
   - jupysql=0.11
-  - polars=1.33.1
+  - polars=1.34
+  - jupyterlab_myst=2.4
 
   # pip installed packages, conda is preferred
   - pip:
-    - datascience==0.18
+    - datascience==0.18.1
     - nbconvert[webpdf]==7.16.6
-    - otter-grader==6.1.5
+    - otter-grader==6.1.6
