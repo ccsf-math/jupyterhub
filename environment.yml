@@ -25,6 +25,7 @@ dependencies:
   - nbgitpuller=1.2.2
   #- jupyterlab-spellchecker=0.8
   - jupyter-archive=3.4
+  - jupyterlab-latex=4.4
 
   # MATH 108 and STAT C1000 Packages
   - numpy=2.3
