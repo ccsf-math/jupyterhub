@@ -14,16 +14,12 @@ dependencies:
   
   # Jupyter
   - jupyter-resource-usage=1.1
-  #- jupyterhub=5.3
-  #- jupyterlab=4.4.7
   - jupyterlab_widgets=3.0
   - ipywidgets=8.1
   - jupyter_server=2.16
-  - jupyterlab-git=0.51.2
+  - jupyterlab-git=0.51
   - jupytext=1.17
-  #- notebook=7.4.5
-  - nbgitpuller=1.2.2
-  #- jupyterlab-spellchecker=0.8
+  - nbgitpuller=1.2
   - jupyter-archive=3.4
   - jupyterlab-latex=4.4
 
@@ -50,10 +46,11 @@ dependencies:
 
   # pip installed packages, conda is preferred
   - pip:
-    - datascience==0.18.1
-    - nbconvert[webpdf]==7.16.6
-    - otter-grader==6.1.6
-    - jupyterlab==4.5.0
-    - notebook==7.5.0
-    - jupyterhub==5.4.2
-    - jupyterlab-myst==2.4
+    - datascience=0.18
+    - nbconvert[webpdf]=7.16
+    - otter-grader=6.1
+    - jupyterlab=4.5
+    - notebook=7.5
+    - jupyterhub=5.4
+    - jupyterlab-myst=2.4
+    - jupyterlab-a11y-checker=0.2
