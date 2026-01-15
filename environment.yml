@@ -7,8 +7,8 @@ channels:
 dependencies:
   # Items required for basic level functionality
   - gh-scoped-creds=4.1
-  - git==2.5.0
-  - ipython==9.9.0
+  - git=2.5.0
+  - ipython=9.9.0
   - jupyter-resource-usage=1.2
   - jupyterhub==5.4.3
   - jupyterlab==4.5.2
@@ -45,7 +45,7 @@ dependencies:
   - scipy=1.16
   - seaborn=0.13
   - statsmodels=0.14
-  - sympy=.14
+  - sympy=1.14
   - folium=0.20
   - nltk=3.9
   - ipympl=0.9
