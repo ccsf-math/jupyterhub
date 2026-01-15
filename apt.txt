@@ -19,6 +19,7 @@ texlive-publishers
 texlive-science
 texlive-xetex
 fonts-noto-color-emoji
+latexdiff
 libasound2
 libnss3
 libnspr4
@@ -31,7 +32,16 @@ libatspi2.0-0
 libxcomposite1
 libxdamage1
 libxfixes3
+ruby
+rsync
 libxrandr2
 libgbm1
 libxkbcommon0
 zip
+libgdal-dev
+gdal-bin
+libgeos-dev
+libproj-dev
+libsqlite3-dev
+libssl-dev
+libudunits2-dev
