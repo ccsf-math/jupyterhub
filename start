@@ -1,5 +1,10 @@
 #!/bin/bash
-
 # See https://jira-secure.berkeley.edu/browse/DH-305
 export PLAYWRIGHT_BROWSERS_PATH=${CONDA_DIR}
-exec "$@"
+
+# If no arguments provided, start jupyter lab
+if [ $# -eq 0 ]; then
+    exec jupyter lab --ip=0.0.0.0 --port=8888 --no-browser
+else
+    exec "$@"
+fi
