@@ -65,7 +65,8 @@
         "codeCellConfig": {
             "lineNumbers": true
         },
-        "windowingMode": "none"
+        "windowingMode": "defer",
+        "fullWidthNotebook": false
     },
     "@jupyterlab/fileeditor-extension:plugin": {
         "editorConfig": {
