@@ -59,7 +59,6 @@ dependencies:
   - pip:
     - pip-tree==4.0.0
     - pipdeptree==2.28.0
-    - jupyterlab-myst==2.4
     - jupyterlab-a11y-checker==0.2.5
     - jupysql==0.10.15
     - nbconvert[webpdf]==7.16.6
