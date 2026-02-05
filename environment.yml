@@ -40,16 +40,16 @@ dependencies:
   - sympy==1.14.0
   
   ## Extra Beyond Cal-ICOR
-  - nltk=3.9
-  - ipympl=0.9
-  - requests=2.32
-  - httpx=0.28
-  - beautifulsoup4=4.13
-  - html5lib=1.1
-  - polars=1.38
-  - jupyterlab-latex=4.4
-  - gh=2.76
-  - nbdime=4.0
+  # - nltk=3.9
+  # - ipympl=0.9
+  # - requests=2.32
+  # - httpx=0.28
+  # - beautifulsoup4=4.13
+  # - html5lib=1.1
+  # - polars=1.38
+  # - jupyterlab-latex=4.4
+  # - gh=2.76
+  # - nbdime=4.0
 
   # pip installed packages, conda is preferred
   - pip:
