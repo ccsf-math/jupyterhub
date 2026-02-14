@@ -49,8 +49,8 @@ dependencies:
   - sympy==1.14.0
 
   # Additional packages (uncomment if needed)
-  - nltk==3.9
-  - requests==2.32
+  - nltk==3.9.2
+  - requests==2.32.3
   - httpx==0.28
   - beautifulsoup4==4.13
   - html5lib==1.1
