@@ -1,4 +1,3 @@
-# Based on https://github.com/cal-icor/base-user-image/blob/main/apt.txt
 # Some linux packages for basic terminal work, particularly
 # oriented at users new to Unix/cmd line environments.
 
@@ -25,9 +24,6 @@ lmodern
 # Other useful document-related tools
 pandoc
 latexdiff
-
-# For minted LaTeX package (syntax highlighting)
-python3-pygments
 
 # Some useful git utilities use basic Ruby
 ruby
@@ -75,3 +71,6 @@ texlive-science
 # Additional fonts and utilities
 fonts-noto-color-emoji
 zip
+
+# For minted LaTeX package (syntax highlighting)
+python3-pygments
