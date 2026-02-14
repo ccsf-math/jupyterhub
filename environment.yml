@@ -50,7 +50,6 @@ dependencies:
 
   # Additional packages (uncomment if needed)
   - nltk==3.9
-  - ipympl==0.9
   - requests==2.32
   - httpx==0.28
   - beautifulsoup4==4.13
