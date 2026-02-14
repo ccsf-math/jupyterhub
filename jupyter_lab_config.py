@@ -8,3 +8,6 @@ c.HTMLExporter.embed_images = True
 
 # Better terminal defaults
 c.ServerApp.terminado_settings = {'shell_command': ['/bin/bash']}
+
+# Disable Python syntax highlighting in markdown cells
+c.MarkdownCell.cm_config = {'mode': 'gfm'}  # GitHub Flavored Markdown
