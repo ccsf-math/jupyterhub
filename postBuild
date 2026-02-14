@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# installing chromium browser to enable webpdf conversion using nbconvert
+export PLAYWRIGHT_BROWSERS_PATH=${CONDA_DIR}
+playwright install chromium
+
 # Prevent continuing when CONDA_DIR is undefined
 : "${CONDA_DIR:?CONDA_DIR not set}"
 
