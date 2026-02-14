@@ -1,15 +1,16 @@
 # Derived from https://github.com/cal-icor/base-user-image/blob/main/environment.yml
-name: sp26
-
+name: base-user-image
+# This is the standard conda configuration file. Use this file to list
+# the conda packages that you need installed in your environment.
 channels:
   - conda-forge
-  
+
 dependencies:
   # Items required for basic level functionality
   - gh-scoped-creds==4.1
   - git==2.51.0
   - ipython==9.9.0
-  - jupyter-resource-usage==1.2.0
+  - jupyter-resource-usage=1.2.0
   - jupyterhub==5.4.3
   - jupyterlab==4.5.2
   - jupyter-archive==3.4.0
@@ -23,6 +24,14 @@ dependencies:
   - pip==25.1.1
   - regex==2025.11.3
   - sqlite==3.51.1
+
+  # r2d installs jupyter-rsession-proxy, but in the base python env, not in the updated one
+  - jupyter-rsession-proxy==2.3.0
+
+  # vscode
+  - code-server==4.106.2
+  - jupyter-vscode-proxy==0.7
+  - jupyter-server-proxy==4.4.0
 
   # data science
   - datascience==0.18.1
@@ -38,7 +47,7 @@ dependencies:
   - seaborn==0.13.2
   - statsmodels==0.14.4
   - sympy==1.14.0
-  
+
   # Additional packages (uncomment if needed)
   - nltk==3.9
   - ipympl==0.9
