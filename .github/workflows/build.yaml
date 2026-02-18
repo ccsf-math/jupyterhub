@@ -45,6 +45,7 @@ jobs:
         #
         # Uncomment and modify the following line with your image name, otherwise no push will happen
         IMAGE_NAME: "ccsf/jupyterhub"
+        FORCE_REPO2DOCKER_VERSION: jupyter-repo2docker==2025.12.0
 
     # Lets us monitor disks getting full as images get bigger over time
     - name: Show how much disk space is left
