@@ -16,6 +16,8 @@ The configuration for the [2i2c](https://2i2c.org/) and [Cloudbank](https://www.
 
 ## Replicate Fall 2025 JupyterHub Environment
 
+Currently, these instructions do not seem to be working with computers running the newer Apple Silicon chips.
+
 ### Step 1 — Install Docker Desktop
 
 1. Download [Docker Desktop](https://www.docker.com/products/docker-desktop/) for your operating system.
