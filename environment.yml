@@ -57,7 +57,7 @@ dependencies:
   # - httpx==0.28.1
   # - beautifulsoup4==4.12.3
   # - html5lib==1.1
-  - polars==1.42.1
+  # - polars==1.42.1
   # - jupyterlab-latex==4.4.0
   # - gh==2.76.0
   # - nbdime==4.0.2
