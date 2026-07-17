@@ -38,10 +38,10 @@ Currently, these instructions do not seem to be working with computers running t
 2. Run the following command to download the course image (~2–4 GB, may take several minutes):
 
 ```bash
-docker pull quay.io/ccsf/jupyterhub:fa25
+docker pull quay.io/ccsf/jupyterhub:sp26.3
 ```
 
-3. Wait until you see `Status: Downloaded newer image for quay.io/ccsf/jupyterhub:fa25` before proceeding.
+3. Wait until you see `Status: Downloaded newer image for quay.io/ccsf/jupyterhub:sp26.3` before proceeding.
 
 ---
 
@@ -50,13 +50,13 @@ docker pull quay.io/ccsf/jupyterhub:fa25
 #### Option A — Using the Terminal (recommended)
 
 ```bash
-docker run -p 8888:8888 quay.io/ccsf/jupyterhub:fa25
+docker run -p 8888:8888 quay.io/ccsf/jupyterhub:sp26.3
 ```
 
 #### Option B — Using Docker Desktop's UI
 
 1. Open Docker Desktop and click the **Images** tab in the left sidebar.
-2. Find `quay.io/ccsf/jupyterhub` with the `fa25` tag and click **Run**.
+2. Find `quay.io/ccsf/jupyterhub` with the `sp26.3` tag and click **Run**.
 3. Expand **Optional Settings** and set:
    - **Host port:** `8888`
    - **Container port:** `8888`
