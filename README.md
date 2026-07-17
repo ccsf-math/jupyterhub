@@ -14,7 +14,7 @@ The configuration for the [2i2c](https://2i2c.org/) and [Cloudbank](https://www.
 - [2i2c Infrastructure Documentation](https://infrastructure.2i2c.org/en/latest/)
 - [UC Berkeley's DataHub Repo - DATA 8 Focus](https://github.com/berkeley-dsep-infra/datahub)
 
-## Replicate Fall 2025 JupyterHub Environment
+## Replicate Spring 2026 JupyterHub Environment
 
 Currently, these instructions do not seem to be working with computers running the newer Apple Silicon chips.
 
