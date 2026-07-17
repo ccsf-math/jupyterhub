@@ -57,12 +57,12 @@ dependencies:
   # - httpx==0.28.1
   # - beautifulsoup4==4.12.3
   # - html5lib==1.1
-  # - polars==1.42.1
+  - polars==1.42.1
   # - jupyterlab-latex==4.4.0
   # - gh==2.76.0
   # - nbdime==4.0.2
   - marimo==0.23.14
-  - marimo-jupyter-extension==0.3.0
+  
 
   # pip installed packages, conda is preferred
   - pip:
@@ -80,3 +80,6 @@ dependencies:
 
     # nbgitpuller pre-release
     - nbgitpuller==1.3.0
+
+    # Additional packages (not in Cal-ICOR base user image)
+    - marimo-jupyter-extension==0.3.0
