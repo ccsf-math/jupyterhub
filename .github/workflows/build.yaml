@@ -8,15 +8,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Cleanup disk space
-      run: |
-        sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc
-        df -h
-
     - name: Checkout files in repo
       uses: actions/checkout@v4
 
-    - name: Set up QEMU (for cross-platform builds)
+    - name: Install repo2docker
+      run: |
+        pip install jupyter-repo2docker==2025.12.0
+
+    - name: Generate Dockerfile with repo2docker
+      run: |
+        repo2docker --no-run --image-name temp-image .
+
+    - name: Set up QEMU
       uses: docker/setup-qemu-action@v3
 
     - name: Set up Docker Buildx
@@ -33,11 +36,7 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         context: .
+        file: Dockerfile   # repo2docker just created this
         platforms: linux/amd64,linux/arm64
         push: true
         tags: quay.io/ccsf/jupyterhub:main
-        cache-from: type=gha
-        cache-to: type=gha,mode=max
-
-    - name: Show disk space
-      run: df -h
