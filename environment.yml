@@ -54,13 +54,13 @@ dependencies:
 
   # Additional packages (not in Cal-ICOR base user image)
   # - nltk==3.9.2
-  # - requests==2.32.3
+  - requests==2.34.2
   # - httpx==0.28.1
-  # - beautifulsoup4==4.12.3
-  # - html5lib==1.1
+  - beautifulsoup4==4.15.0
+  - html5lib==1.1
   - polars==1.42.1
   # - jupyterlab-latex==4.4.0
-  # - gh==2.76.0
+  - gh==2.98.0
   # - nbdime==4.0.2
   - marimo==0.23.14
   
