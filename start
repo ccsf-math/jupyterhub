@@ -11,9 +11,17 @@ export PIP_CACHE_DIR=${CONDA_DIR}/envs/notebook/pip_cache
 # See https://jira-secure.berkeley.edu/browse/DH-305
 export PLAYWRIGHT_BROWSERS_PATH=${CONDA_DIR}
 
-# Set RStudio config directory to a location in the repository so that it can
-# be persisted across container restarts
-export XDG_CONFIG_HOME=${REPO_DIR}/rstudio-config
+# Point RStudio at the config shipped in the image without hijacking
+# XDG_CONFIG_HOME for the whole server process. This used to be
+# `export XDG_CONFIG_HOME=${REPO_DIR}/rstudio-config`, which also redirected
+# every other XDG-aware tool (notably gh) into ${REPO_DIR}. ${REPO_DIR} lives
+# in the image, not on the persistent home volume, so it is reset on every
+# server start and GitHub logins did not survive a restart or logout.
+export RSTUDIO_CONFIG_HOME=${REPO_DIR}/rstudio-config/rstudio
+
+# Keep gh credentials on the persistent home volume. Set explicitly so that a
+# future XDG_CONFIG_HOME change cannot move them back onto ephemeral storage.
+export GH_CONFIG_DIR=${HOME}/.config/gh
 
 # Set vscode proxy URI template
 export VSCODE_PROXY_URI="../proxy/absolute/{{port}}/"
