@@ -39,10 +39,10 @@
                         "rank": 6
                     },
                     {
-                        "command": "notebook:export-to-format", 
+                        "command": "notebook:export-to-format",
                         "rank": 7,
                         "args": {
-                            "format": "html",
+                            "format": "html_embed",
                             "label": "Download HTML"
                         }
                     },

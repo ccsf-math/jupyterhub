@@ -22,6 +22,12 @@ mkdir -p ${NB_PYTHON_PREFIX}/etc/jupyter
 cp -u jupyter_lab_config.py ${NB_PYTHON_PREFIX}/etc/jupyter
 cp -u jupyter_nbconvert_config.py ${NB_PYTHON_PREFIX}/etc/jupyter
 
+# Custom "html_embed" nbconvert exporter: always embeds images and, unlike
+# the built-in "html" format, is never routed through JupyterLab 4.6+'s
+# "Sanitize HTML output" prompt. The File menu's "Download HTML" item
+# (see overrides.json) uses this format.
+pip install --no-deps ./ccsf_nbexporters
+
 # code-server's conda package assets are installed in share/code-server.
 export VSCODE_EXTENSIONS=${CONDA_DIR}/envs/notebook/share/code-server/extensions
 mkdir -p ${VSCODE_EXTENSIONS}
