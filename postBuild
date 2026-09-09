@@ -17,7 +17,7 @@ cp -p rstudio-config/rstudio/rstudio-prefs.json ${REPO_DIR}/rstudio/
 mkdir -p ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings
 cp -p overrides.json ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings
 
-# Export configuration files
+# CCSF export configuration files
 mkdir -p /srv/conda/envs/notebook/etc/jupyter
 cp -u jupyter_lab_config.py /srv/conda/envs/notebook/etc/jupyter
 cp -u jupyter_nbconvert_config.py /srv/conda/envs/notebook/etc/jupyter
